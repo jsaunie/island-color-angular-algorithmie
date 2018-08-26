@@ -1,7 +1,3 @@
-.title {
-  font-size: 2rem;
-  text-align: center;
-}
 
 .container {
   display: flex;
@@ -15,13 +11,4 @@
   flex: 1;
   flex-direction: column;
   align-content: space-around;
-}
-
-canvas {
-  margin: 0 auto;
-  border: solid 0.2rem #bbb;
-}
-
-img {
-  margin:20rem 1rem 1rem 1rem
 }

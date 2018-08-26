@@ -1,0 +1,45 @@
+<div class="test">
+
+  <div class="tab">
+    <span class="tab--title">The island color is</span>
+    <div class="tab--form-group">
+      <label for="newColor">New color :</label>
+      <input id="newColor" [(ngModel)]="canvasService.config.color">
+    </div>
+    <div class="tab--form-group">
+      <label for="Size">Size :</label>
+      <input id="Size" [value]="canvasService.config.size" (input)="canvasService.setSize($event)">
+    </div>
+    <div class="tab--form-group">
+      <label for="canvasWidth">Canvas width :</label>
+      <input id="canvasWidth" [(ngModel)]="canvasService.config.width">
+    </div>
+    <div class="tab--form-group">
+      <label for="canvasHeight">Canvas height :</label>
+      <input id="canvasHeight" [(ngModel)]="canvasService.config.height">
+    </div>
+    <div class="tab--form-group">
+      <label for="SeaLandRatio">Sea/land ratio</label>
+      <input id="SeaLandRatio" [(ngModel)]="canvasService.config.ratio">
+    </div>
+    <div class="tab--form-group">
+      <label for="SeaColor">Sea color :</label>
+      <input id="SeaColor" [(ngModel)]="canvasService.config.sea">
+    </div>
+    <div class="tab--form-group">
+      <label for="LandColor">Land color :</label>
+      <input id="LandColor" [(ngModel)]="canvasService.config.land">
+    </div>
+    <br>
+    <p>The number of islands is {{numberOfIslands}} <br>
+      Generated in {{timeGeneration}}ms</p>
+    <button class="btn" (click)="reRender()">Re-render</button>
+    <button class="btn" (click)="standardizeIslandsColor()">Uniformize</button>
+    <img class="tab--image"
+         src="https://66.media.tumblr.com/5903fd1ba72dd4ab8d0f71cfc7612e16/tumblr_inline_njxcufYOOD1s7oayg.gif">
+  </div>
+
+  <div class="canvas">
+    <canvas #canvasElement></canvas>
+  </div>
+</div>

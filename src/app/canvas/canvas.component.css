@@ -1,0 +1,85 @@
+canvas {
+  margin: 0 auto;
+  border: solid 0.2rem #bbb;
+}
+
+.test {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  padding: 35px 0;
+}
+
+.canvas {
+  display: inline-block;
+  /*width: 800px;*/
+  padding: 15px;
+}
+
+.tab {
+  display: inline-block;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tab--title {
+  font-size: 16px
+}
+
+.tab--form-group {
+  margin-bottom: 10px;
+}
+
+.tab--form-group label{
+  font-size: 14px;
+}
+
+.tab--form-group input{
+  border-radius: 3px;
+  line-height: 20px;
+  box-shadow: none;
+}
+
+.tab p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.tab--image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #000000;
+  margin: 5px 5px 15px 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 12px 2px #0000002e;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1173px) {
+  .tab {
+    width: 25%;
+  }
+
+  .tab--image {
+    display: block;
+  }
+}

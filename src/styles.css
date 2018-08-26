@@ -3,14 +3,12 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  background-image: url('https://wallpapercave.com/wp/wp753589.jpg');
+  background-color: #e3fdfd;
 }
 
 h1, span, p {
-  color: #f1e013;
-  font-family: 'Pirata One', sans-serif;
-  text-shadow: 0.2rem 0.2rem #3c3c3c;
+  color: #000000;
+  font-family: 'Arimo', sans-serif;
 }
 
 p, span {
@@ -24,4 +22,19 @@ input {
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   margin: 0 .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+a:hover {
+  color: black;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
